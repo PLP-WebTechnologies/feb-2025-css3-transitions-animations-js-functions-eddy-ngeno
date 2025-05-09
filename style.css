@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: skyblue;
+  margin: 20px auto;
+  transition: background-color 0.5s;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}
+
+.bounce {
+  animation: bounce 1s ease;
+}
